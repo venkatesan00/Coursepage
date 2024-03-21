@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekBase</title>
+    <link rel="stylesheet" href="geek.css">
+    <script src="geek.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to GeekBase</h1>
+        <img src="C:\Users\lokes\OneDrive\Desktop\html\geekbase.jpg" alt="GeekBase Image" style width="50%">
+    </header>
+    <div class="container">
+        <h2>Home Page</h2>
+        <p>Welcome to GeekBase! Click below to explore our courses.</p>
+        <button onclick="openCourses()">Courses</button>
+    </div>
+    <div class="container" id="courses" style="display: none;">
+        <h2>Courses</h2>
+        <div class="course">
+            <h3>Course 1</h3>
+            <p>This is the first course description.</p>
+        </div>
+        <div class="course">
+            <h3>Course 2</h3>
+            <p>This is the second course description.</p>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Don't Miss Updates!</h2>
+            <p>Subscribe to our newsletter to receive the latest updates.</p>
+            <form>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
