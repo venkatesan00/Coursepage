@@ -9,10 +9,10 @@
             document.getElementById('popup').style.display = 'none';
         }
 
-        window.onload = function() {
+        window.seTimeout (function() {
             if (localStorage.getItem('popupShown') !== 'true') {
                 document.getElementById('popup').style.display = 'block';
                 localStorage.setItem('popupShown', 'true');
             }
-        }
+        },50000)
     
